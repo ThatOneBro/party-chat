@@ -1,0 +1,17 @@
+{
+  "name": "@party-chat/server",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "main": "index.ts",
+  "author": "Derrick Farris <derrick.c.farris@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@party-chat/shared": "workspace:*",
+    "partykit": "beta"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20230628.0",
+    "typescript": "^5.1.6"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "name": "party-chat",
+  "module": "index.ts",
+  "type": "module",
+  "scripts": {
+    "dev:client": "cd client && pnpm run dev",
+    "dev:server": "cd server && npx partykit@beta dev index.ts",
+    "dev": "concurrently -n server,client \"pnpm run dev:server\" \"pnpm run dev:client\""
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.0",
+    "typescript": "^5.1.6"
+  },
+  "peerDependencies": {},
+  "license": "MIT"
+}
